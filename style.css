@@ -1,0 +1,50 @@
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 200px);
+	grid-template-rows: repeat(3, 200px);
+	position: relative;
+}
+
+.moveMe {
+	height: 200px;
+	width: 200px;
+	background-color: yellow;
+	transition: transform .800s ease;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.moveMe:nth-of-type(1) {
+	background-image: url("/row-1-col-1.jpg");
+}
+
+.moveMe:nth-of-type(2) {
+	background-image: url("/row-1-col-2.jpg");
+}
+.moveMe:nth-of-type(3) {
+	background-image: url("/row-1-col-3.jpg");
+}
+.moveMe:nth-of-type(4) {
+	background-image: url("/row-2-col-1.jpg");
+}
+.moveMe:nth-of-type(5) {
+	background-image: url("/row-2-col-2.jpg");
+}
+.moveMe:nth-of-type(6) {
+	background-image: url("/row-2-col-3.jpg");
+}
+.moveMe:nth-of-type(7) {
+	background-image: url("/row-3-col-1.jpg");
+}
+.moveMe:nth-of-type(8) {
+	background-image: url("/row-3-col-2.jpg");
+}
+
+.wrapper .tile:nth-of-type(odd) {
+	background-color: lightpink;
+}
+
+.wrapper .tile:nth-of-type(even) {
+	background-color: lightblue;
+}
